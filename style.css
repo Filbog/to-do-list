@@ -1,12 +1,14 @@
 body{
     background-color: #ffffe5;
+    box-sizing: border-box;
 
 }
 #to-do{
     width: 400px;
     margin: 50px auto;
     border-radius: 15px;
-    border: 1px solid #cfd8dc;
+   
+    border-right: 1px solid #cfd8dc; 
     box-shadow: 0 0 10px #ccc;
 }
 .header{
@@ -14,6 +16,7 @@ body{
     color: white;
     height: 80px;
     border-radius: 15px 15px 0 0;
+    border: 1px solid #cfd8dc;
 }
 .header h2{
     margin-top: 0;
@@ -26,11 +29,38 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
-    border: 1px solid #cfd8dc;
+    /* border: 1px solid #cfd8dc; */
     height: 50px;
+    
 }
 .task{
     display: flex;
+}
+.task:last-child .col-1{
+    border-radius: 0 0 0 15px;
+}
+.task:last-child .col-3{
+    border-radius: 0 0 15px 0;
+}
+.add-block{
+    display: flex;
+    border-top: 1px solid #cfd8dc;
+    border-bottom: 1px solid #cfd8dc;
+}
+.add-field{
+    width: 75%;
+    height: 50px;
+    padding: 0 15px 0 15px;
+    border: 0;
+    outline: none;
+}
+.add-button{
+    border: 0;
+    padding: 0;
+    color: blue;
+    font-size: 40px;
+    font-weight: bold;
+    outline: none;
 }
 .col-1{
     width: 10%;
@@ -51,4 +81,18 @@ body{
 }
 .col-3{
     width: 20%;
+    background-color: #bbdefb;
+}
+.col-3:hover{
+    background-color: #90caf9;
+}
+.task-remove{
+    background-image: url(Materials/trash.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+*{
+    /* border: 0 !important; */
 }
