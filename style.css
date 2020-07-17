@@ -1,14 +1,14 @@
 body{
     background-color: #ffffe5;
     box-sizing: border-box;
-
+    margin-bottom: 1000px;
 }
 #to-do{
     width: 400px;
     margin: 50px auto;
     border-radius: 15px;
    
-    border-right: 1px solid #cfd8dc; 
+    /* border-right: 1px solid #cfd8dc;  */
     box-shadow: 0 0 10px #ccc;
 }
 .header{
@@ -33,8 +33,13 @@ body{
     height: 50px;
     
 }
+.task:last-child{
+    border-radius: 0 0 15px 15px;
+}
 .task{
     display: flex;
+    border-bottom: 1px solid #cfd8dc;
+
 }
 .task:last-child .col-1{
     border-radius: 0 0 0 15px;
@@ -82,17 +87,19 @@ body{
 .col-3{
     width: 20%;
     background-color: #bbdefb;
+    height: 50px;
 }
 .col-3:hover{
     background-color: #90caf9;
+    cursor: pointer;
 }
 .task-remove{
     background-image: url(Materials/trash.svg);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
+    height: 50px;
 }
-
-*{
-    /* border: 0 !important; */
+.checked{
+    text-decoration: line-through;
 }
