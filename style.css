@@ -1,0 +1,54 @@
+body{
+    background-color: #ffffe5;
+
+}
+#to-do{
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 15px;
+    border: 1px solid #cfd8dc;
+    box-shadow: 0 0 10px #ccc;
+}
+.header{
+    background-color: blue;
+    color: white;
+    height: 80px;
+    border-radius: 15px 15px 0 0;
+}
+.header h2{
+    margin-top: 0;
+    text-align: center;
+    /* line height exact as the parent element so that the text is aligned vertically */
+    line-height: 80px;
+    
+}
+.tasks{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #cfd8dc;
+    height: 50px;
+}
+.task{
+    display: flex;
+}
+.col-1{
+    width: 10%;
+    background-color: #bbdefb;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.col-2{
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.col-3{
+    width: 20%;
+}
